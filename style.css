@@ -1,0 +1,139 @@
+
+/* --------------- GENERAL --------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("./img/fondo.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-wrap: wrap;
+}
+
+/* --------------- APP CONTENEDOR --------------- */
+
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+	opacity: 100%;
+	transition: all 2s;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedorenter {
+	position: relative;
+	text-align: center;
+	transition: all 2s;
+	justify-content: center;
+}
+
+/* --------------- SEARCH BOX --------------- */
+
+input {
+	width: 80vw;
+	padding: 10px;
+	font-size: 1.25rem;
+	text-align: center;
+	background-color: #EEEEEE;
+	outline: none;
+	transition: all .4s;
+	color: #5A5A5A;
+	opacity: 85%;
+	border: #EEEEEE solid ;
+}
+
+/* --------------- WEATHER CARD --------------- */
+
+.weather-card {
+	position: absolute;
+	background: linear-gradient(#F7F7F7, #DEDEDE);
+	width: 80vw;
+	opacity: 0%;
+	transition: margin 2s;
+	transition: opacity 3s;
+}
+
+.cardshowdisplay {
+	display: none;
+}
+
+.cardshow {
+	background: linear-gradient(#F7F7F7, #DEDEDE);
+	width: 80vw;
+	padding: 15px;
+	margin-top: 10px;
+	color: #212121;
+	opacity: 85%;
+	transition: margin 2s;
+	transition: opacity 3s;
+}
+
+/* --------------- WEATHER DATA --------------- */
+
+.date {
+	margin-top: 0.625rem;
+	font-size: 1.25rem;
+	margin-bottom: -0.625rem;
+}
+
+.city {
+	font-size: 2.5rem;
+}
+
+.temperature {
+	font-size: 3.75rem;
+	margin-top: -0.9375rem;
+}
+
+.weather {
+	font-size: 1.875rem;
+}
+
+.range {
+	font-size: 1.25rem;
+}
+
+/* --------------- RESPONSIVE --------------- */
+
+@media (max-width: 992px) {
+	* {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	* {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 576px) {
+	* {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 476px) {
+	* {
+		font-size: 5px;
+	}
+}
+
+@keyframes zoomin {
+	0% {width: 20%;}
+	50% {width: 20.5%;}
+	100% {width: 20%;}
+}

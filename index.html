@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>weatherAPP</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  </head>
+  <body>
+    <main>
+      <!-- APP CONTENEDOR START -->
+      <div class="contenedor " id="cont">
+
+        <!-- SEARCH BOX START -->
+        <form id="searchform">
+          <input type="text" placeholder="Escribe tu ubicación" class="search" id="searchbox" autocomplete="off"/>
+        </form>
+        <!-- SEARCH BOX END -->
+
+        <!-- WEATHER CARD START -->
+        <div class="weather-card cardshowdisplay" id="card">
+          <!-- WEATHER DATA START -->
+          <div class="date" id="date"></div>
+          <div class="city" id="city"></div>
+          <div class="temperature" id="temperature"></div>
+          <div class="weather" id="weather"></div>
+          <div class="range" id="range"></div>
+          <!-- WEATHER DATA END -->
+        </div>
+        <!-- WEATHER CARD END -->
+      </div>
+      <!-- APP CONTENEDOR END -->
+    </main>
+  </body>
+</html>
